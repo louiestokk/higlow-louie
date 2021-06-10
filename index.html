@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./script.js"></script>
+    <title>high low</title>
+    <style>
+      .hideButton {
+        display: none;
+      }
+      .score {
+        display: inline-block;
+      }
+
+      .card {
+        position: absolute;
+        left: 0;
+        top: 80px;
+        display: inline-block;
+        margin: 5px 0;
+        padding: 7px;
+        height: 90px;
+        width: 70px;
+        background-color: whitesmoke;
+        border: 1px solid black;
+        border-radius: 5px;
+        box-shadow: 5px 10px #333;
+      }
+      .big {
+        font-size: 3em;
+        text-align: center;
+        line-height: 40px;
+        margin: auto;
+        display: block;
+      }
+      .red {
+        color: red;
+      }
+      .tiny {
+        display: block;
+        font-size: 0.8em;
+        line-height: 8px;
+        vertical-align: top;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      Streak:
+      <div class="score">0</div>
+    </div>
+    <div class="message">Click to start</div>
+    <div class="gameplay"></div>
+    <button type="button">Start</button>
+    <button class="hideButton" type="button">Higher</button>
+    <button class="hideButton" type="button">Lower</button>
+  </body>
+</html>
